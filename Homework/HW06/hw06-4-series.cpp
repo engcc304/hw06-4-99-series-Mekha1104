@@ -20,22 +20,27 @@
 
 int main() {
     int n;
-    printf("Enter the number of terms: ");
+    
+    printf("Enter number:\n");
     scanf("%d", &n);
-
+    
     int sum = 0;
     int term = 9;
-
+    
+    printf("Series = ");
+    
     for (int i = 1; i <= n; i++) {
         if (i > 1) {
             printf(" + ");
         }
+        
         printf("%d", term);
+        
         sum += term;
         term = term * 10 + 9;
     }
-
-    printf("\nSum of the series: %d\n", sum);
-
+    
+    printf("\nSum = %d\n", sum);
+    
     return 0;
 }
